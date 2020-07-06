@@ -2,7 +2,9 @@ name: when-pull-merged
 
 on:
   pull_request:
-    branches: master
+    branches:
+      - master
+    types: [closed]
 
 jobs:
   notify:
